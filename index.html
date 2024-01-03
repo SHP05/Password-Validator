@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+    <link rel="stylesheet" href="E:\html & css\css\all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box">
+        <div class="pws">
+                <input type="password"  placeholder="Password" id="ip" value="" oninput="checkvalid()">
+                <br>
+                <span id="icon"> 
+                    <i class="fa-solid fa-eye"  id="icon1"></i> 
+                </span> 
+                <!-- <i class="fa-solid fa-eye-slash" id="icon2" ></i> -->
+        </div>
+        
+        <div class="validation">
+            <ul>
+                <li id="lc"><input type="checkbox" id="cb1" class="cb">  Atleast one lower charector</li>
+                <li id="up"><input type="checkbox" id="cb2" class="cb">  Atleast one upper charector</li>
+                <li id="num"><input type="checkbox" id="cb3" class="cb">  Atleast one number</li>
+                <li id="spchar"><input type="checkbox" id="cb4" class="cb">  Atleast one spacial charector</li>
+                <li id="len"><input type="checkbox" id="cb5" class="cb">  Must 8 charector</li>
+            </ul>
+        </div>
+        <div>
+             <center><button id="btn">Set Password</button></center>
+        </div>
+        <h2 id="alert"></h2>
+    </div>
+    <!-- <h1 id="val"></h1> -->
+</body>
+<script src="script.js"></script>
+</html>
