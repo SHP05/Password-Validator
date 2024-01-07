@@ -95,14 +95,20 @@
             let btn=document.getElementById('btn');
             let alert = document.getElementById('alert');
             function Submitbtn(){
+                 if(ip.value.length <1)
+                {    alert.innerHTML = "Password is incorrect";
+                setTimeout(()=>{alert.innerHTML = "" },2000);
+                }
+                else{
                 alert.innerHTML = "Yor Password is Valid"
-                setTimeout(()=>{alert.innerHTML = "" },3000);
+                setTimeout(()=>{alert.innerHTML = "" },2000);
                 ip.value = null;
                 c1.checked = false;
                 c2.checked = false;
                 c3.checked = false;
                 c4.checked = false;
                 c5.checked = false;
+            }
             }   
             btn.addEventListener('click',Submitbtn);
         }
